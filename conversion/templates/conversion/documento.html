@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Document Operations</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'conversion/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Comprehensive Document Operations Web Application</h1>
+        <button id="menu-btn">☰ Menu</button>
+    </header>
+    <div id="sidebar" class="sidebar hidden">
+        <ul>
+            <li id="conversion-option">Conversion</li>
+            <i>Resizing</li>
+            <li>Merging</li>
+        </ul>
+    </div>
+    <main id="main-content">
+        <div id="conversion-section" class="hidden ">
+            <h2>File Conversion</h2>
+            <input type="file" id="file-input" multiple>
+            <button id="upload-btn">Upload</button>
+            <div id="conversion-options" class="hidden ">
+                <h3>Select Conversion Options:</h3>
+                <button id="convert-to-pdf" class="conversion-btn ">Convert to PDF</button>
+                <button id="pdf-to-image" class="conversion-btn ">Pdf to img</button>
+                <button id="pdf-to-jpg" class="conversion-btn ">Pdf to jpg</button>
+                <button id="pdf-to-png" class="conversion-btn ">Pdf to png</button>
+                <button id="pdf-to-word" class="conversion-btn ">Pdf to word</button>
+                <button id="pdf-to-ppt" class="conversion-btn ">Pdf to ppt</button>
+                <button id="pdf-to-excel" class="conversion-btn ">Pdf to excel</button>
+                <button id="img-to-jpg" class="conversion-btn ">img to jpg</button>
+                <button id="jpg-to-img" class="conversion-btn ">jpg to img</button>
+                <button id="img-to-png" class="conversion-btn ">img to png</button>
+                <button id="png-to-img" class="conversion-btn ">png to img</button>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="{% static 'conversion/script.js' %} "></script>
+</body>
+
+</html>
+
+
+</html>

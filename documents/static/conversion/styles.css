@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px);
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #555;
+}
+
+#main-content {
+    margin-left: 220px;
+    padding: 20px;
+    text-align: center;
+    /* Centering the content inside the main-content section */
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+.conversion-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.conversion-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styles for centering the download link */
+
+#download-link {
+    display: inline-block;
+    /* Makes the link behave like a block-level element */
+    margin: 20px auto;
+    /* Centers the link horizontally */
+    background-color: #4CAF50;
+    /* Green background for the link */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+#download-link:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
